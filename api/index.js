@@ -353,12 +353,43 @@ app.post('/api/orders', async (req, res) => {
 // Get all orders (admin)
 app.get('/api/orders', async (req, res) => {
   try {
-    const { status } = req.query;
-    const filter = {};
+    const { status, search, from, to } = req.query;
+    const conditions = [];
 
     if (status && status !== 'all') {
-      filter.$or = [{ status }, { payment_status: status }];
+      conditions.push({ $or: [{ status }, { payment_status: status }] });
     }
+
+    if (search && search.trim() !== '') {
+      const escapedSearch = search.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const searchRegex = new RegExp(escapedSearch, 'i');
+      conditions.push({
+        $or: [
+          { customer_name: searchRegex },
+          { phone: searchRegex },
+          { order_id: searchRegex }
+        ]
+      });
+    }
+
+    const createdAtFilter = {};
+    if (from) {
+      const fromDate = new Date(from);
+      if (!Number.isNaN(fromDate.getTime())) {
+        createdAtFilter.$gte = fromDate;
+      }
+    }
+    if (to) {
+      const toDate = new Date(to);
+      if (!Number.isNaN(toDate.getTime())) {
+        createdAtFilter.$lte = toDate;
+      }
+    }
+    if (Object.keys(createdAtFilter).length > 0) {
+      conditions.push({ created_at: createdAtFilter });
+    }
+
+    const filter = conditions.length > 0 ? { $and: conditions } : {};
 
     const orders = await Order.find(filter).sort({ created_at: -1 }).lean();
     res.json({ success: true, orders });

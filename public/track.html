@@ -50,13 +50,50 @@
             <div id="result">
                 <h3>Order <span id="resOrderId"></span></h3>
 
-                <div class="result-row">
-                    <strong>Status</strong>
-                    <span id="resStatus" class="status-badge"></span>
+                <div class="order-meta">
+                    <div>
+                        <span class="meta-label">Date Placed</span>
+                        <div id="resDate" class="meta-value"></div>
+                    </div>
+                    <div>
+                        <span class="meta-label">Total Amount</span>
+                        <div class="meta-value">₹<span id="resTotalTop"></span></div>
+                    </div>
                 </div>
-                <div class="result-row">
-                    <strong>Date</strong>
-                    <span id="resDate"></span>
+
+                <div class="tracking-timeline" id="trackingTimeline">
+                    <div class="timeline-step" id="step-pending">
+                        <div class="step-icon">⏳</div>
+                        <div class="step-content">
+                            <div class="step-title">Order Placed</div>
+                            <div class="step-desc">We have received your order</div>
+                        </div>
+                    </div>
+                    <div class="timeline-step" id="step-confirmed">
+                        <div class="step-icon">✅</div>
+                        <div class="step-content">
+                            <div class="step-title">Confirmed</div>
+                            <div class="step-desc">Your order has been confirmed</div>
+                        </div>
+                    </div>
+                    <div class="timeline-step" id="step-preparing">
+                        <div class="step-icon">🧑‍🍳</div>
+                        <div class="step-content">
+                            <div class="step-title">Preparing</div>
+                            <div class="step-desc">We are baking your treats</div>
+                        </div>
+                    </div>
+                    <div class="timeline-step" id="step-delivered">
+                        <div class="step-icon">🚚</div>
+                        <div class="step-content">
+                            <div class="step-title">Delivered</div>
+                            <div class="step-desc">Enjoy your Brownie Bliss!</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="cancelledAlert" class="cancelled-alert" style="display: none;">
+                    ❌ This order has been cancelled. Please contact support.
                 </div>
 
                 <h4>Items</h4>

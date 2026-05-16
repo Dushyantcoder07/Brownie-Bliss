@@ -644,9 +644,47 @@ function renderOrderDetails(order) {
 
     resOrderId.textContent = order.id || order.order_id;
 
-    const status = order.status || 'pending';
-    document.getElementById('resStatus').textContent = status.toUpperCase();
-    document.getElementById('resStatus').className = `status-badge status-${status.toLowerCase()}`;
+    const statusLower = (order.status || 'pending').toLowerCase();
+    
+    // Update top total amount
+    const resTotalTop = document.getElementById('resTotalTop');
+    if (resTotalTop) resTotalTop.textContent = order.total;
+
+    // Timeline Progression Logic
+    const timeline = document.getElementById('trackingTimeline');
+    const cancelledAlert = document.getElementById('cancelledAlert');
+    
+    if (timeline && cancelledAlert) {
+        if (statusLower === 'cancelled') {
+            timeline.style.display = 'none';
+            cancelledAlert.style.display = 'block';
+        } else {
+            timeline.style.display = 'block';
+            cancelledAlert.style.display = 'none';
+            
+            // Reset all steps
+            const steps = ['pending', 'confirmed', 'preparing', 'delivered'];
+            steps.forEach(s => {
+                const el = document.getElementById(`step-${s}`);
+                if (el) el.classList.remove('active', 'completed');
+            });
+            
+            // Determine current step index
+            const currentIndex = steps.indexOf(statusLower) > -1 ? steps.indexOf(statusLower) : 0;
+            
+            // Apply classes
+            steps.forEach((s, i) => {
+                const el = document.getElementById(`step-${s}`);
+                if (!el) return;
+                
+                if (i < currentIndex) {
+                    el.classList.add('completed');
+                } else if (i === currentIndex) {
+                    el.classList.add('active');
+                }
+            });
+        }
+    }
 
     if (order.created_at) {
         document.getElementById('resDate').textContent = new Date(order.created_at).toLocaleString();

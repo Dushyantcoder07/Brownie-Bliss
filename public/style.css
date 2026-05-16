@@ -2547,7 +2547,7 @@ a.logo {
   position: relative;
   overflow: hidden;
   box-shadow:
-  inset 0 0 120px rgba(212,175,55,0.08);
+    inset 0 0 120px rgba(212, 175, 55, 0.08);
 }
 
 .about-quote::before {
@@ -2556,13 +2556,11 @@ a.logo {
   inset: 0;
   opacity: 0.04;
   background-image:
-    repeating-linear-gradient(
-      45deg,
+    repeating-linear-gradient(45deg,
       var(--gold) 0,
       var(--gold) 1px,
       transparent 1px,
-      transparent 30px
-    );
+      transparent 30px);
 }
 
 .about-quote-inner {
@@ -2584,14 +2582,14 @@ a.logo {
   color: var(--gold);
   margin: 0 16px;
 }
+
 .about-section {
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       #fff9f2,
-      #f7ede1
-    );
+      #f7ede1);
 }
+
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
@@ -2613,6 +2611,7 @@ a.logo {
     padding: 70px 24px;
   }
 }
+
 /* CONTACT SOCIAL LINKS */
 
 .contact-socials {
@@ -2699,9 +2698,9 @@ a.logo {
   display: flex;
   gap: 20px;
 
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.7);
 
-  border: 1px solid rgba(212,175,55,0.15);
+  border: 1px solid rgba(212, 175, 55, 0.15);
 
   padding: 26px;
   border-radius: 18px;
@@ -2757,11 +2756,9 @@ a.logo {
 
 .hours-card {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       var(--brown-dark),
-      #2f140d
-    );
+      #2f140d);
 
   color: var(--cream);
 
@@ -2791,7 +2788,7 @@ a.logo {
   padding: 14px 0;
 
   border-bottom:
-    1px solid rgba(255,255,255,0.1);
+    1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hour-row:last-child {
@@ -2806,12 +2803,10 @@ a.logo {
   gap: 18px;
 
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       #833ab4,
       #fd1d1d,
-      #fcb045
-    );
+      #fcb045);
 
   padding: 22px 26px;
 
@@ -2824,7 +2819,7 @@ a.logo {
   transition: 0.35s ease;
 
   box-shadow:
-    0 18px 40px rgba(131,58,180,0.25);
+    0 18px 40px rgba(131, 58, 180, 0.25);
 }
 
 .insta-box:hover {
@@ -2837,7 +2832,7 @@ a.logo {
 
   border-radius: 50%;
 
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
 
   display: flex;
   align-items: center;
@@ -2865,11 +2860,9 @@ a.logo {
 
 .contact-form-box {
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       #2a120c,
-      #1b0b07
-    );
+      #1b0b07);
 
   color: white;
 
@@ -2878,7 +2871,7 @@ a.logo {
   border-radius: 28px;
 
   box-shadow:
-    0 25px 60px rgba(0,0,0,0.25);
+    0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
 .form-top {
@@ -2902,7 +2895,7 @@ a.logo {
 }
 
 .form-desc {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 
   line-height: 1.8;
 
@@ -2919,9 +2912,9 @@ a.logo {
 .contact-form-box textarea {
   width: 100%;
 
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   color: white;
 
@@ -2941,7 +2934,7 @@ a.logo {
 
 .contact-form-box input::placeholder,
 .contact-form-box textarea::placeholder {
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .contact-form-box input:focus,
@@ -3018,11 +3011,9 @@ a.logo {
 
 .exp-card {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       #2d130c,
-      #4b1d11
-    );
+      #4b1d11);
 
   color: white;
 
@@ -3033,15 +3024,14 @@ a.logo {
   text-align: center;
 
   box-shadow:
-    0 18px 40px rgba(0,0,0,0.18);
+    0 18px 40px rgba(0, 0, 0, 0.18);
 
   transition: 0.35s ease;
 }
 
 .exp-card:hover {
   transform:
-    translateY(-8px)
-    scale(1.02);
+    translateY(-8px) scale(1.02);
 }
 
 .exp-card h3 {
@@ -3057,7 +3047,7 @@ a.logo {
 .exp-card span {
   font-size: 16px;
 
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 
   letter-spacing: 0.5px;
 }
@@ -3100,25 +3090,34 @@ a.logo {
 
 html.dark {
   /* Backgrounds — --cream & --white are used as bg, so override them */
-  --cream:        #1a1008;
-  --cream-dark:   #221508;
-  --white:        #1c1108;
+  --cream: #1a1008;
+  --cream-dark: #221508;
+  --white: #1c1108;
   /* Text */
-  --text-dark:    #f0e4d0;
-  --text-mid:     #c8a882;
+  --text-dark: #f0e4d0;
+  --text-mid: #c8a882;
   /* Shadows */
-  --shadow-sm:    0 2px 4px rgba(0,0,0,0.45);
-  --shadow-md:    0 10px 30px rgba(0,0,0,0.55);
-  --shadow-lg:    0 20px 50px rgba(0,0,0,0.65);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.65);
   /* Glass */
-  --glass:        rgba(26,14,5,0.75);
-  --glass-border: rgba(212,175,55,0.2);
+  --glass: rgba(26, 14, 5, 0.75);
+  --glass-border: rgba(212, 175, 55, 0.2);
 }
 
 /* ── Smooth colour transitions (scoped — avoids breaking hover/transform) ── */
-body, header, .cart-sidebar, .cart-item, .cart-header,
-.product-card, .product-info, .checkout-modal,
-nav a, input, textarea, select {
+body,
+header,
+.cart-sidebar,
+.cart-item,
+.cart-header,
+.product-card,
+.product-info,
+.checkout-modal,
+nav a,
+input,
+textarea,
+select {
   transition: background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease;
 }
 
@@ -3134,65 +3133,145 @@ html.dark .hero-title,
 html.dark .value-item,
 html.dark .value-text strong,
 html.dark .value-text span {
-  color: #FFF9F2; /* original cream */
+  color: #FFF9F2;
+  /* original cream */
 }
 
 /* Logo */
-html.dark .logo-name { color: var(--text-dark); }
-html.dark .logo-sub  { color: var(--gold); }
+html.dark .logo-name {
+  color: var(--text-dark);
+}
+
+html.dark .logo-sub {
+  color: var(--gold);
+}
 
 /* Headings on light-turned-dark backgrounds */
 html.dark h2.section-title,
-html.dark .section-title { color: var(--text-dark); }
-html.dark .section-title em { color: var(--gold); }
-html.dark .section-label { color: var(--gold); }
+html.dark .section-title {
+  color: var(--text-dark);
+}
+
+html.dark .section-title em {
+  color: var(--gold);
+}
+
+html.dark .section-label {
+  color: var(--gold);
+}
 
 /* General headings */
-html.dark h1, html.dark h2, html.dark h3, html.dark h4 { color: var(--text-dark); }
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+  color: var(--text-dark);
+}
 
 /* Nav links */
-html.dark nav a       { color: var(--text-mid); }
-html.dark nav a:hover { color: var(--text-dark); }
+html.dark nav a {
+  color: var(--text-mid);
+}
+
+html.dark nav a:hover {
+  color: var(--text-dark);
+}
 
 /* Cart button */
-html.dark .cart-btn              { color: var(--text-mid); border-color: #5a3820; }
-html.dark .cart-btn:hover        { background: var(--gold); color: var(--brown-dark); border-color: var(--gold); }
+html.dark .cart-btn {
+  color: var(--text-mid);
+  border-color: #5a3820;
+}
+
+html.dark .cart-btn:hover {
+  background: var(--gold);
+  color: var(--brown-dark);
+  border-color: var(--gold);
+}
 
 /* Filter tabs */
-html.dark .filter-tab            { color: var(--text-mid); border-color: #5a3820; }
+html.dark .filter-tab {
+  color: var(--text-mid);
+  border-color: #5a3820;
+}
+
 html.dark .filter-tab.active,
-html.dark .filter-tab:hover      { background: var(--gold); color: var(--brown-dark); border-color: var(--gold); }
+html.dark .filter-tab:hover {
+  background: var(--gold);
+  color: var(--brown-dark);
+  border-color: var(--gold);
+}
 
 /* Product cards */
-html.dark .product-name          { color: var(--text-dark); }
-html.dark .product-price         { color: var(--gold); }
-html.dark .product-category      { color: var(--gold); }
+html.dark .product-name {
+  color: var(--text-dark);
+}
+
+html.dark .product-price {
+  color: var(--gold);
+}
+
+html.dark .product-category {
+  color: var(--gold);
+}
 
 /* Birthday section inline-styled text (override via element selectors) */
-html.dark .birthday-card         { background: var(--white) !important; }
-html.dark label[style]           { color: var(--gold) !important; }
+html.dark .birthday-card {
+  background: var(--white) !important;
+}
+
+html.dark label[style] {
+  color: var(--gold) !important;
+}
 
 /* Footer (bg stays dark, text was already okay except logo) */
-html.dark .footer-brand .logo-name   { color: var(--text-dark); }
-html.dark .footer-bottom             { color: rgba(240,228,208,0.4); }
-html.dark .footer-col a              { color: rgba(240,228,208,0.6); }
-html.dark .footer-col a:hover        { color: var(--gold-light); }
+html.dark .footer-brand .logo-name {
+  color: var(--text-dark);
+}
+
+html.dark .footer-bottom {
+  color: rgba(240, 228, 208, 0.4);
+}
+
+html.dark .footer-col a {
+  color: rgba(240, 228, 208, 0.6);
+}
+
+html.dark .footer-col a:hover {
+  color: var(--gold-light);
+}
 
 /* Cart sidebar */
-html.dark .cart-title            { color: var(--text-dark); }
-html.dark .cart-item-name        { color: var(--text-dark); }
-html.dark .cart-item-price       { color: var(--gold); }
+html.dark .cart-title {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item-name {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item-price {
+  color: var(--gold);
+}
+
 html.dark .cart-total-label,
-html.dark .cart-total-amt        { color: var(--text-dark); }
+html.dark .cart-total-amt {
+  color: var(--text-dark);
+}
 
 /* Inputs / textareas */
-html.dark input, html.dark textarea, html.dark select {
+html.dark input,
+html.dark textarea,
+html.dark select {
   background: var(--cream-dark);
   color: var(--text-dark);
   border-color: #3a2010;
 }
+
 html.dark input::placeholder,
-html.dark textarea::placeholder  { color: #8a6848; }
+html.dark textarea::placeholder {
+  color: #8a6848;
+}
 
 /* ── THEME TOGGLE BUTTON ── */
 .theme-toggle-btn {
@@ -3211,9 +3290,19 @@ html.dark textarea::placeholder  { color: #8a6848; }
   line-height: 1;
   backface-visibility: hidden;
 }
-.theme-toggle-btn:hover              { background: var(--brown-dark); transform: rotate(22deg) scale(1.08); }
-html.dark .theme-toggle-btn          { border-color: var(--gold); }
-html.dark .theme-toggle-btn:hover    { background: var(--gold); }
+
+.theme-toggle-btn:hover {
+  background: var(--brown-dark);
+  transform: rotate(22deg) scale(1.08);
+}
+
+html.dark .theme-toggle-btn {
+  border-color: var(--gold);
+}
+
+html.dark .theme-toggle-btn:hover {
+  background: var(--gold);
+}
 
 
 
@@ -5494,25 +5583,34 @@ a.logo {
 
 html.dark {
   /* Backgrounds — --cream & --white are used as bg, so override them */
-  --cream:        #1a1008;
-  --cream-dark:   #221508;
-  --white:        #1c1108;
+  --cream: #1a1008;
+  --cream-dark: #221508;
+  --white: #1c1108;
   /* Text */
-  --text-dark:    #f0e4d0;
-  --text-mid:     #c8a882;
+  --text-dark: #f0e4d0;
+  --text-mid: #c8a882;
   /* Shadows */
-  --shadow-sm:    0 2px 4px rgba(0,0,0,0.45);
-  --shadow-md:    0 10px 30px rgba(0,0,0,0.55);
-  --shadow-lg:    0 20px 50px rgba(0,0,0,0.65);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.65);
   /* Glass */
-  --glass:        rgba(26,14,5,0.75);
-  --glass-border: rgba(212,175,55,0.2);
+  --glass: rgba(26, 14, 5, 0.75);
+  --glass-border: rgba(212, 175, 55, 0.2);
 }
 
 /* ── Smooth colour transitions (scoped — avoids breaking hover/transform) ── */
-body, header, .cart-sidebar, .cart-item, .cart-header,
-.product-card, .product-info, .checkout-modal,
-nav a, input, textarea, select {
+body,
+header,
+.cart-sidebar,
+.cart-item,
+.cart-header,
+.product-card,
+.product-info,
+.checkout-modal,
+nav a,
+input,
+textarea,
+select {
   transition: background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease;
 }
 
@@ -5528,65 +5626,145 @@ html.dark .hero-title,
 html.dark .value-item,
 html.dark .value-text strong,
 html.dark .value-text span {
-  color: #FFF9F2; /* original cream */
+  color: #FFF9F2;
+  /* original cream */
 }
 
 /* Logo */
-html.dark .logo-name { color: var(--text-dark); }
-html.dark .logo-sub  { color: var(--gold); }
+html.dark .logo-name {
+  color: var(--text-dark);
+}
+
+html.dark .logo-sub {
+  color: var(--gold);
+}
 
 /* Headings on light-turned-dark backgrounds */
 html.dark h2.section-title,
-html.dark .section-title { color: var(--text-dark); }
-html.dark .section-title em { color: var(--gold); }
-html.dark .section-label { color: var(--gold); }
+html.dark .section-title {
+  color: var(--text-dark);
+}
+
+html.dark .section-title em {
+  color: var(--gold);
+}
+
+html.dark .section-label {
+  color: var(--gold);
+}
 
 /* General headings */
-html.dark h1, html.dark h2, html.dark h3, html.dark h4 { color: var(--text-dark); }
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+  color: var(--text-dark);
+}
 
 /* Nav links */
-html.dark nav a       { color: var(--text-mid); }
-html.dark nav a:hover { color: var(--text-dark); }
+html.dark nav a {
+  color: var(--text-mid);
+}
+
+html.dark nav a:hover {
+  color: var(--text-dark);
+}
 
 /* Cart button */
-html.dark .cart-btn              { color: var(--text-mid); border-color: #5a3820; }
-html.dark .cart-btn:hover        { background: var(--gold); color: var(--brown-dark); border-color: var(--gold); }
+html.dark .cart-btn {
+  color: var(--text-mid);
+  border-color: #5a3820;
+}
+
+html.dark .cart-btn:hover {
+  background: var(--gold);
+  color: var(--brown-dark);
+  border-color: var(--gold);
+}
 
 /* Filter tabs */
-html.dark .filter-tab            { color: var(--text-mid); border-color: #5a3820; }
+html.dark .filter-tab {
+  color: var(--text-mid);
+  border-color: #5a3820;
+}
+
 html.dark .filter-tab.active,
-html.dark .filter-tab:hover      { background: var(--gold); color: var(--brown-dark); border-color: var(--gold); }
+html.dark .filter-tab:hover {
+  background: var(--gold);
+  color: var(--brown-dark);
+  border-color: var(--gold);
+}
 
 /* Product cards */
-html.dark .product-name          { color: var(--text-dark); }
-html.dark .product-price         { color: var(--gold); }
-html.dark .product-category      { color: var(--gold); }
+html.dark .product-name {
+  color: var(--text-dark);
+}
+
+html.dark .product-price {
+  color: var(--gold);
+}
+
+html.dark .product-category {
+  color: var(--gold);
+}
 
 /* Birthday section inline-styled text (override via element selectors) */
-html.dark .birthday-card         { background: var(--white) !important; }
-html.dark label[style]           { color: var(--gold) !important; }
+html.dark .birthday-card {
+  background: var(--white) !important;
+}
+
+html.dark label[style] {
+  color: var(--gold) !important;
+}
 
 /* Footer (bg stays dark, text was already okay except logo) */
-html.dark .footer-brand .logo-name   { color: var(--text-dark); }
-html.dark .footer-bottom             { color: rgba(240,228,208,0.4); }
-html.dark .footer-col a              { color: rgba(240,228,208,0.6); }
-html.dark .footer-col a:hover        { color: var(--gold-light); }
+html.dark .footer-brand .logo-name {
+  color: var(--text-dark);
+}
+
+html.dark .footer-bottom {
+  color: rgba(240, 228, 208, 0.4);
+}
+
+html.dark .footer-col a {
+  color: rgba(240, 228, 208, 0.6);
+}
+
+html.dark .footer-col a:hover {
+  color: var(--gold-light);
+}
 
 /* Cart sidebar */
-html.dark .cart-title            { color: var(--text-dark); }
-html.dark .cart-item-name        { color: var(--text-dark); }
-html.dark .cart-item-price       { color: var(--gold); }
+html.dark .cart-title {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item-name {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item-price {
+  color: var(--gold);
+}
+
 html.dark .cart-total-label,
-html.dark .cart-total-amt        { color: var(--text-dark); }
+html.dark .cart-total-amt {
+  color: var(--text-dark);
+}
 
 /* Inputs / textareas */
-html.dark input, html.dark textarea, html.dark select {
+html.dark input,
+html.dark textarea,
+html.dark select {
   background: var(--cream-dark);
   color: var(--text-dark);
   border-color: #3a2010;
 }
+
 html.dark input::placeholder,
-html.dark textarea::placeholder  { color: #8a6848; }
+html.dark textarea::placeholder {
+  color: #8a6848;
+}
 
 /* ── THEME TOGGLE BUTTON ── */
 .theme-toggle-btn {
@@ -5605,9 +5783,57 @@ html.dark textarea::placeholder  { color: #8a6848; }
   line-height: 1;
   backface-visibility: hidden;
 }
-.theme-toggle-btn:hover              { background: var(--brown-dark); transform: rotate(22deg) scale(1.08); }
-html.dark .theme-toggle-btn          { border-color: var(--gold); }
-html.dark .theme-toggle-btn:hover    { background: var(--gold); }
 
+.theme-toggle-btn:hover {
+  background: var(--brown-dark);
+  transform: rotate(22deg) scale(1.08);
+}
 
+html.dark .theme-toggle-btn {
+  border-color: var(--gold);
+}
 
+html.dark .theme-toggle-btn:hover {
+  background: var(--gold);
+}
+
+/* Fix button text colours in dark mode */
+html.dark .add-to-cart,
+html.dark .add-to-cart.added,
+html.dark .btn-primary,
+html.dark .btn-checkout,
+html.dark .btn-whatsapp,
+html.dark .track-container button {
+  color: #FFF9F2 !important;
+}
+
+/* Fix button hover states in dark mode (golden cream colour) */
+html.dark .add-to-cart:hover,
+html.dark .btn-primary:hover,
+html.dark .btn-checkout:hover,
+html.dark .btn-whatsapp:hover,
+html.dark .track-container button:hover {
+  background-color: var(--gold) !important;
+  color: var(--brown-dark) !important;
+}
+
+/* Fix price text in dark mode */
+html.dark #cakePrice {
+  color: var(--gold) !important;
+}
+
+/* Fix cart close button in dark mode */
+html.dark .cart-close {
+  color: #FFF9F2 !important;
+}
+
+/* Fix hero-cta hover in dark mode */
+html.dark .hero-cta:hover {
+  background-color: var(--gold-light) !important;
+  color: var(--brown-dark) !important;
+}
+
+/* Fix toast notification text in dark mode */
+html.dark .toast {
+  color: #FFF9F2 !important;
+}

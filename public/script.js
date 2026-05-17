@@ -961,6 +961,11 @@ function renderOrderDetails(order) {
 
     document.getElementById('result').style.display = 'block';
 }
+function toggleMenu(){
+  document
+    .getElementById("mobileMenu")
+    .classList.toggle("show");
+}
 
 // --- PRODUCT CUSTOMIZATION MODAL ---
 let _customizeProduct = null;
